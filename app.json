@@ -10,8 +10,7 @@
     },
     "KEYSTORE_PASSWORD": {
       "generator": "secret"
-    }
-  },
+    },
   "formation": {
     "salesforcetokafka": {
       "quantity": 1
