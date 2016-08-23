@@ -11,13 +11,13 @@ object SalesforceToKafka extends App {
 
   implicit val actorSystem = ActorSystem()
 
-  Salesforce.withSource("IOTSensor") { salesforceSource =>
-    Kafka.sink[String]("IOTSensor").map { kafkaSink =>
+  Salesforce.withSource("IOTCaseUpdates") { salesforceSource =>
+    Kafka.sink[String]("IOTCaseUpdates").map { kafkaSink =>
       implicit val materializer = ActorMaterializer()(actorSystem)
 
       def messageToProducerRecord(message: Message) = {
         logger.info("Got message: " + message.getJSON)
-        new ProducerRecord[String, String]("IOTSensor", message.getJSON)
+        new ProducerRecord[String, String]("IOTCaseUpdates", message.getJSON)
       }
 
       salesforceSource.map(messageToProducerRecord).to(kafkaSink).run()
