@@ -16,6 +16,10 @@
     },
     "SALESFORCE_PASSWORD": {
       "required": true
+    },
+    "SETUP_BY": {
+            "description": "Who initiated this setup",
+            "value": "David Baliles"
     }
   },
   "formation": {
