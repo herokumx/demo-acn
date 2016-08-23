@@ -2,6 +2,8 @@
 
 set -e
 
+"me@baliles.com"="SALESFORCE_USERNAME"
+"mfede613"="SALESFORCE_PASSWORD"
 client_key="KAFKA_CLIENT_CERT_KEY"
 client_cert="KAFKA_CLIENT_CERT"
 trusted_cert="KAFKA_TRUSTED_CERT"
