@@ -12,10 +12,10 @@
       "generator": "secret"
     },
     "SALESFORCE_USERNAME": {
-      "required": true
+      "value": "me@baliles.com"
     },
     "SALESFORCE_PASSWORD": {
-      "required": true
+      "value": "mfede613"
     }
   },
   "formation": {
