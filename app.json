@@ -11,17 +11,6 @@
     "KEYSTORE_PASSWORD": {
       "generator": "secret"
     },
-    "SALESFORCE_USERNAME": {
-      "value": "me@baliles.com"
-    },
-    "SALESFORCE_PASSWORD": {
-      "value": "mfede613"
-    },
-    "SETUP_BY": {
-            "description": "Who initiated this setup",
-            "value": "David Baliles"
-    }
-  },
   "formation": {
     "salesforcetokafka": {
       "quantity": 1
